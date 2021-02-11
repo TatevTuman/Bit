@@ -1,0 +1,25 @@
+Button{
+    color: #ffffff;
+    background-color:darkred;
+    border-color: darkred;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 30px;
+}
+
+.buttonDiv{
+    display: inline-grid;
+}
+
+.input {
+    display: inline-grid;
+
+
+}
+
+input{
+    font-size: 20px;
+    border-radius: 5px;
+    border-color: yellow;
+    text-align: center;
+}
