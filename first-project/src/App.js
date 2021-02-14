@@ -1,12 +1,14 @@
-import './App.css';
-import Guitar from "./Guitar";
 import {Component} from "react/cjs/react.production.min";
+import s from './App.module.css';
+import Guitar from "./HomeWork01/Guitar";
+import Counter from "./HomeWork02/Counter";
+import ContactForm from "./HomeWork02/ContactForm";
+import Task from "./Task";
 import guitarClassic from "./photos/guitarClassic.jpg"
 import guitarRed from "./photos/guitarRed.jpg"
 import ukulClassic from "./photos/ukulClassic.jpg"
 import ukulYellow from "./photos/ukulYellow.jpg"
-import Counter from "./Counter";
-import ContactForm from "./ContactForm";
+import CustomerData from "./HomeWork03/CustomerData";
 
 
 class App extends Component {
@@ -21,13 +23,18 @@ class App extends Component {
 
 
     render() {
+
         return (
             <div>
                 <div><Guitar guitarsProps={this.state.guitars}/></div>
-                <div><Counter/></div>
-                <div><ContactForm/></div>
-            </div>
+                <div className={s.allPages}></div>
+                <div className={s.CounterPages}><Counter/></div>
+                <div className={s.ContactFormPages}><ContactForm/></div>
+                {/*   <div><Task/></div>*/}
+                <div className={s.CustomerDataPages}><CustomerData/></div>
 
+
+            </div>
 
         )
     }

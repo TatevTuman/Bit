@@ -2,10 +2,6 @@
   text-align: center;
 }
 
-.block {
-  display: contents;
-}
-
 img {
   width: 20%;
   height: 50%;
@@ -16,7 +12,6 @@ img {
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -28,5 +23,20 @@ img {
   color: white;
 }
 
+.CounterPages , .ContactFormPages ,.CustomerDataPages{
+  float: left;
+  display: block;
+  width: 300px;
+/*  border: 1px solid blue;*/
+  margin: 2px;
+  text-align: center;
+
+}
+
+
+.allPages{
+  margin-top: 20px;
+
+}
 
 

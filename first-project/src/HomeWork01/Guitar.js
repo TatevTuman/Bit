@@ -8,7 +8,7 @@ class Guitar extends Component {
         const {guitarsProps} = this.props;
         /* console.log(guitarsProps);*/
         const allGuitar = guitarsProps.map((guit, index) => (
-            <div className="block" key={index} id={index}>
+            <div key={index} id={index}>
                 {guit.photo}
                 <strong>Название:</strong> {guit.name}
                 <strong>Струны:</strong> {guit.strings}
@@ -20,7 +20,7 @@ class Guitar extends Component {
             return guit.strings > 5;
         });
         const newGuitars = allGuitars.map((guit, index) => (
-            <div className="block" key={index} id={index}>
+            <div key={index} id={index}>
                 {guit.photo}
                 <strong>Название:</strong> {guit.name}
                 <strong>Струны:</strong> {guit.strings}
@@ -29,7 +29,7 @@ class Guitar extends Component {
         ))
         /*console.log(allGuitars);*/
         return (
-            //Чтобы увидеть работу filter вставь сюда newGuitars
+            //To see how filter works, paste here newGuitars
             <div>{allGuitar}</div>
         )
     }

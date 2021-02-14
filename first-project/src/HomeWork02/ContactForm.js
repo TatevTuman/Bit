@@ -1,5 +1,5 @@
 import {Component} from "react/cjs/react.production.min";
-import "./ContactForm.css";
+
 
 
 class ContactForm extends Component {
@@ -23,12 +23,11 @@ class ContactForm extends Component {
 
     render() {
         return (
-            <div className="contactForm">
+            <div>
                 <div className="titleContactForm">Contact form</div>
                 <input id="name" onChange={() => this.addName()} type="text" placeholder="Your name"/>
                 <input id="last_name" onChange={() => this.addLastName()} type="text" placeholder="Your last name"/>
             </div>
-
         )
     }
 
